@@ -10,7 +10,7 @@ export function getEnvVar(
     return process.env[name];
   }
 
-  const isRequired = !options.isProduction || !options.requiredInProduction
+  const isRequired = !options.isProduction || !options.requiredInProduction;
 
   if (fallback && isRequired) {
     return fallback;
