@@ -24,7 +24,7 @@
     "build": "tsc --declaration --project tsconfig.build.json",
     "lint": "prettier --check \"src/**/*.ts\"",
     "lint:fix": "prettier --write \"src/**/*.ts\"",
-    "prepublish": "yarn run lint && yarn run build"
+    "prepare": "yarn run build"
   },
   "jest": {
     "moduleFileExtensions": [
