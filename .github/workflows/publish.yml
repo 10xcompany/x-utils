@@ -13,6 +13,8 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           registry-url: "https://npm.pkg.github.com"
+      - name: Install packages
+        run: yarn install
       # Publish to GitHub Packages
       - run: npm publish
         env:

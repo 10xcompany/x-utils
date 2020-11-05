@@ -7,7 +7,6 @@
   "repository": "https://github.com/10xcompany/x-utils.git",
   "author": "Quadriphobs1 <abiodunquadriadekunle@gmail.com>",
   "license": "NONE",
-  "private": true,
   "devDependencies": {
     "@types/jest": "^26.0.15",
     "@types/node": "^14.14.6",
