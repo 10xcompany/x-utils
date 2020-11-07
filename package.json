@@ -1,6 +1,6 @@
 {
   "name": "@10xcompany/utils",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "utilities library for project x",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
