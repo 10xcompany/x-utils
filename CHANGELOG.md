@@ -1,3 +1,14 @@
+#### 0.0.3 (2020-11-11)
+
+##### Chores
+
+- bump @types/node@14.14.6->14.14.7, ts-jest@26.4.3->26.4.4 (6a53f27f)
+- rollup for package to reduce size (2afd9079)
+
+##### Bug Fixes
+
+- change escapestringregex to local usage (bd6666ed)
+
 #### 0.0.2 (2020-11-07)
 
 ##### New Features
