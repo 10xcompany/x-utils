@@ -28,6 +28,11 @@ describe("slugify", () => {
       );
     });
 
+    it("should throw error when passed wrong value for separator", () => {
+      // @ts-ignore
+      expect(() => slugify("foo", { separator: false })).toThrow();
+    });
+
     it("should preserve case", () => {
       expect(slugify("Slugified Value", { lowercase: false })).toEqual(
         "Slugified-Value"

@@ -1,5 +1,3 @@
-import escapeStringRegexp = require("escape-string-regexp");
-
 interface Options {
   readonly separator?: string;
   readonly lowercase?: boolean;
@@ -13,6 +11,14 @@ const decamelize = (string) => {
     .replace(/([a-z\d]+)([A-Z]{2,})/g, "$1 $2")
     .replace(/([a-z\d])([A-Z])/g, "$1 $2")
     .replace(/([A-Z]+)([A-Z][a-z\d]+)/g, "$1 $2");
+};
+
+const escapeStringRegexp = (string) => {
+  if (typeof string !== "string") {
+    throw new TypeError("Expected a string");
+  }
+
+  return string.replace(/[|\\{}()[\]^$+*?.]/g, "\\$&").replace(/-/g, "\\x2d");
 };
 
 const removeMootSeparators = (string, separator) => {
